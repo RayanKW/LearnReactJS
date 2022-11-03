@@ -12,3 +12,6 @@ After working on them isolatedly now i join the pieces together to make the whol
 so this repo is me breaking down the whole task and after creating a directory and a commit best belive that topic i've read an understood.
 #
 this will be so tiring and challanging and I'm so excited.
+#
+Please do note this code is tested on a parallel app. This is just some sort of notes for future reference
+
