@@ -2,6 +2,8 @@ import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 import React, { useState } from "react";
 import { Value } from "react-native-reanimated";
 
+//buttons don't accept styling but we can change their color.
+
 const ButtonPrac = () => {
   const [name, setName] = useState("");
   // here we have the useState that's used to update the name and the submit.
@@ -31,6 +33,7 @@ const ButtonPrac = () => {
         onPress={onPressHandler}
         //we give the onPress a function OnPressHandler. can be done either in line or dynamically
         // in line===== onPress={()=>{setSubmitted(!submitted)}}
+        // disabled={submitted} => when the input is submitted the button becomes disabled.
       />
       {submitted ? (
         <Text style={styles.text}>You're registered as: {name}</Text>
