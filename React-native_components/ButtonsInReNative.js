@@ -4,6 +4,7 @@ import { Value } from "react-native-reanimated";
 
 const ButtonPrac = () => {
   const [name, setName] = useState("");
+  // here we have the useState that's used to update the name and the submit.
   const [submitted, setSubmitted] = useState(false);
   onPressHandler = () => {
     setSubmitted(!submitted);
@@ -17,6 +18,8 @@ const ButtonPrac = () => {
         placeholder="your name"
         keyboardType="default"
         onChangeText={(value) => setName(value)}
+        // onchangeText we pass the value that will be updated by useState when the use
+        //enters his/her name.
         clearButtonMode="always"
       />
       <Button
